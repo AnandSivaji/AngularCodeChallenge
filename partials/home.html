@@ -1,0 +1,8 @@
+<div class='mb-home-page container-fluid' ng-controller='HomeController'>
+	<nav class='mb-nav-section col-lg-2 col-md-2 col-sm-2 btn-group-vertical'>
+		<button class='btn btn-default' ng-click="onMenuClick('home.feed')"> Feed </button>
+		<button class='btn btn-default' ng-click="onMenuClick('home.profile')"> Profile </button>
+	</nav>
+
+	<section ui-view class='col-lg-10 col-md-10 col-sm-10 mb-home-content-section'></section>
+</div>

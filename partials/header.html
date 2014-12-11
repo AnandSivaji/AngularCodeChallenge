@@ -1,0 +1,33 @@
+<header class="mb-header" ng-controller="LoginController">
+	
+	<div class="mb-book-icon col-lg-7 col-md-7 col-sm-7">
+		<div class="mb-book-text"> Mean Book </div>
+	</div>
+
+	<form class="col-lg-5 col-md-5 col-sm-5 pull-right" novalidate ng-if='user.isLoggedIn !== true'>
+
+		<div class="col-md-5">
+			<input type="text" ng-model="user.name" placeholder="Username" class="form-control form-inline" name="username" required/>
+		</div>
+
+		<div class="col-md-5">
+			<input type="password" ng-model="user.password" placeholder="Password" class="form-control form-inline" name="username" required/>
+		</div>
+
+		<div class="col-md-2">
+			<button class="btn btn-default" ng-disabled="!user.name || !user.password" ng-click='onLoginClicked()'> Sign In </button>
+		</div>
+
+	</form>
+	
+	<form class="col-lg-5 col-md-5 col-sm-5 pull-right" ng-if='user.isLoggedIn == true'>
+
+		
+		<div class="col-md-12 pull-right">
+			<span class="mb-logged-ser-text">Hi, {{user.name}}</span>
+			<button class="btn btn-default" ng-click='onLogOutClicked()'> Sign Out </button>
+		</div>
+
+	</form>
+</header>
+

@@ -1,0 +1,16 @@
+<div class="container mb-sub-section" ng-controller='FeedController'>
+
+	<div class="row mb-feed-input">
+		<div class="col-lg-10 col-md-10 col-sm-10">
+		<input type="text" class="form-control form-inline" placeholder="Text feed or URL feed" onkeyup=""/>
+		</div>
+		<div class="col-lg-2 col-md-2 col-sm-2">
+			
+		<input type="button" class="btn btn-primary" value="Post" onclick=""/>
+		</div>
+	</div>
+
+	<ul class="mb-feed-list">
+		<li feed-directive ng-repeat='feed in feeds' feed='feed'></li>
+	</ul>
+</div>
