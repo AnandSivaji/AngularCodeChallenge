@@ -107,6 +107,11 @@ footer {
 	height: 100%;
 }
 
+.mb-home-content-section{
+	padding: 0px;
+	overflow-y: auto;
+}
+
 .mb-feed-input {
 	
 	margin: 5px 0px;
@@ -126,8 +131,7 @@ footer {
 	padding: 5px;
 }
 
-.mb-feed-list li,
-.mb-feed-list li div {
+.mb-feed-list li {
 	height: 100px;
 }
 
